@@ -24,9 +24,9 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Database\Entities\" />
+    <Folder Include="Dtos\Loans\" />
+    <Folder Include="Dtos\AmortizationPlans\" />
     <Folder Include="SeedData\" />
-    <Folder Include="Services\Interfaces\" />
   </ItemGroup>
 
 </Project>
