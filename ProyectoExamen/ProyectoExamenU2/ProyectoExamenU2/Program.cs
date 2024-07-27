@@ -10,4 +10,6 @@ var app = builder.Build();
 
 startup.Configure(app, app.Environment);
 
+//no fue necesario hacer el using del seeder
+
 app.Run();

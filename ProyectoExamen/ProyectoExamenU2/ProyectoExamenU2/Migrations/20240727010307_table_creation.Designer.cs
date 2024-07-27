@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoExamenU2.Database;
 
@@ -11,9 +12,11 @@ using ProyectoExamenU2.Database;
 namespace ProyectoExamenU2.Migrations
 {
     [DbContext(typeof(ProyectoExamenU2Context))]
-    partial class ProyectoExamenU2ContextModelSnapshot : ModelSnapshot
+    [Migration("20240727010307_table_creation")]
+    partial class table_creation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
