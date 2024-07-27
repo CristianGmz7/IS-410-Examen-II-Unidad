@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProyectoExamenU2.Database;
 using ProyectoExamenU2.Helpers;
+using ProyectoExamenU2.Services;
+using ProyectoExamenU2.Services.Interfaces;
 
 namespace ProyectoExamenU2;
 
@@ -25,10 +27,8 @@ public class Startup
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
         // Add custom services
-        ////services.AddTransient<ICategoriesService, CategoriesService>();
-        //services.AddTransient<ICategoriesService, CategoriesSQLService>();
-        //services.AddTransient<IAuthService, AuthService>();
-        //services.AddTransient<IPostsService, PostsService>();
+        services.AddTransient<IClientsService, ClientsService>();
+        services.AddTransient<ILoansService, LoansService>();
 
         // Add AutoMapper
         services.AddAutoMapper(typeof(AutoMapperProfile));

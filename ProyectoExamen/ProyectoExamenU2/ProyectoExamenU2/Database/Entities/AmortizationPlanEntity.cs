@@ -11,7 +11,7 @@ public class AmortizationPlanEntity : BaseEntity
     [Column("installment_number")]
     public int InstallmentNumber { get; set; }
 
-    //Fecha: Fecha establecida para el pago de cada cuota mensual. o Fecha de primer pago: Fecha en que el cliente debe realizar su primer pago.
+    //Fecha: Fecha establecida para el pago de cada cuota mensual. //Esto no es Fecha de primer pago: Fecha en que el cliente debe realizar su primer pago.
     [Column("payment_date")]
     public DateTime PaymentDate { get; set; }
 

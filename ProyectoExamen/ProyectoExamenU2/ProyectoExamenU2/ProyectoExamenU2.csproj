@@ -23,8 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Dtos\Loans\" />
     <Folder Include="Dtos\AmortizationPlans\" />
     <Folder Include="SeedData\" />
   </ItemGroup>

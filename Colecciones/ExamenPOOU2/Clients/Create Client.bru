@@ -1,0 +1,18 @@
+meta {
+  name: Create Client
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/clients
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Juan perez",
+    "identity": 123456789
+  }
+}
